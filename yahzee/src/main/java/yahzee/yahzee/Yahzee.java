@@ -11,9 +11,19 @@ public class Yahzee
         
         Scanner scanner = new Scanner(System.in);
         
-        System.out.print("Settisi on: ");
-        die.showDice( die.roll5Dice() );
-        System.out.println(". Valitset ne jotka haluat heittää uudestaan kirjoittamalla niiden numerot ja paina enter:");
+        die.setDice(die.roll5Dice());
+        
+        for (int i = 0; i < 3; i++) {
+            System.out.println(i+1 +". settisi on: ");
+            
+            for (int j = 0; j < 5; j++) {
+                System.out.print(j+1 + ". noppasi on: ");
+                die.showDie(die.getDice(), j);
+                System.out.println();
+            }
+            System.out.println("");
+            System.out.println("Valitset ne jotka haluat heittää uudestaan kirjoittamalla niiden numerot ja paina enter:");
+        }
     }
 }
 
