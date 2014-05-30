@@ -17,13 +17,13 @@ import static org.junit.Assert.*;
  *
  * @author tnli
  */
-public class RollerTest {
+public class DieTest {
     
-    Roller d6;
+    Die d6;
       
     @Before
     public void setUp() {
-        d6 = new Roller(6);
+        d6 = new RollDie;
     }
     
      @Test
