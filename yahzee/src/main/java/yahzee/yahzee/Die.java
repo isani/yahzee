@@ -39,6 +39,10 @@ public class Die {
         return dice;
     }
     
+    public void showDie(int[] dice, int die) {
+        System.out.print(dice[die]);
+    }
+    
     public void showDice(int[] dice) {
         for (int i = 0; i < dice.length; i++) {
             System.out.print( dice[i]+" ");
